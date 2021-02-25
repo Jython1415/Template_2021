@@ -15,9 +15,5 @@ void auton_route_2         () ;
 void auton_route_3         () ;
 void auton_route_4         () ;
 void auton_route_5         () ;
-void auton_route_6         () ;
-void auton_route_11        () ;
-void auton_route_12        () ;
-void auton_route_13        () ;
 
 #endif

@@ -40,21 +40,6 @@ void a_drive (double power_input, int time_input);
 // turn(target, power) ::: yes reset
 void a_turn (double target_input, int power_input);
 
-// tray_up()
-void a_tray_up ();
-
-// tray_mid()
-void a_tray_mid ();
-
-// tray_down()
-void a_tray_down ();
-
-// stack()
-void a_stack ();
-
-// outtake_small()
-void a_outtake_small ();
-
 // straight drive 1 ===============================================================================
 #define auton_straight_1_side_moe     30
 #define auton_straight_1_target_moe   50
@@ -179,79 +164,5 @@ extern double auton_turn_1_error  ; // how far the robot is from the target posi
 void auton_turn_1_set (double target_input, double power_input) ;
 void auton_turn_1_loop () ;
 bool auton_turn_1_done () ;
-
-// arm control 1 ---------------------------------------------------------------------------------
-#define auton_arm_1_up_power        90
-#define auton_arm_1_down_power     -50
-#define auton_arm_1_holding_power   15
-#define auton_arm_1_moe             25
-#define auton_arm_1_up_pos_1      1750
-#define auton_arm_1_up_pos_2      2250
-#define auton_arm_1_down_pos       -10
-
-extern int auton_arm_1_done  ;
-extern int auton_arm_1_mode  ;
-extern int auton_arm_1_error ;
-extern int auton_arm_1_power ;
-
-void auton_arm_1_set (int arm_state) ;
-void auton_arm_1_loop () ;
-
-// tray control 1 ===============================================================================
-/*
-#define auton_tray_1_down_position       -10
-#define auton_tray_1_up_position        2400
-#define auton_tray_1_default_power        60
-#define auton_tray_1_close_power          20
-#define auton_tray_1_holding_power_up     15
-#define auton_tray_1_holding_power_down    5
-#define auton_tray_1_moe                  10
-
-extern int auton_tray_1_done  ;
-extern int auton_tray_1_error ;
-
-void auton_tray_1_up_set () ;
-void auton_tray_1_up () ;
-void auton_tray_1_down_set () ;
-void auton_tray_1_down () ;
-*/
-
-// tray 2 =======================================================================================
-#define auton_tray_2_up_pos_1   1300
-#define auton_tray_2_up_pos_2   1550
-#define auton_tray_2_up_pos_3   2550
-#define auton_tray_2_mid_pos    2000
-#define auton_tray_2_down_pos_1  500
-#define auton_tray_2_down_pos_2  100
-
-#define auton_tray_2_up_power_max     90
-#define auton_tray_2_up_power         40
-#define auton_tray_2_up_power_slow    25
-#define auton_tray_2_down_power_fast -60 
-#define auton_tray_2_down_power_slow -90
-#define auton_tray_2_down_power_min  -25
-#define auton_tray_2_mid_power        60
-
-#define auton_tray_2_mid_moe 20
-
-extern int auton_tray_2_done_var   ; // 0 is not done, 1 is done
-extern int auton_tray_2_target_pos ; // 0 is down, 1 is almost up, 2 is stack
-
-extern double auton_tray_2_pos   ;
-extern double auton_tray_2_error ;
-
-void auton_tray_2_set (int position_input);
-
-void auton_tray_2_loop ();
-
-bool auton_tray_2_done ();
-
-// intake control 1 -------------------------------------------------------------------------------
-#define auton_intake_1_in_power  100
-#define auton_intake_1_out_power -90
-
-void auton_intake_1_in () ;
-void auton_intake_1_out () ;
-void auton_intake_1_stop () ;
 
 #endif

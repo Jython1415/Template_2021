@@ -66,75 +66,35 @@ void debug_print ()
     debug_count += 1;
     Brain.Screen.clearScreen();
     Brain.Screen.setCursor(1, 0);
-    // std::cout << debug_count << std::flush;
-    // std::cout << "," << std::flush;
+    std::cout << debug_count << std::flush;
+    std::cout << "," << std::flush;
     
-    // // print actual power
-    // for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-    // {
-    //   i->print_actual_power();
-    // }
+    // print actual power
+    for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+    {
+      i->print_actual_power();
+    }
     // print target power
-    // for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-    // {
-    //   i->print_target_power();
-    // }
+    for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+    {
+      i->print_target_power();
+    }
     // print rotation
-    // for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-    // {
-    //   i->print_rotation();
-    // }
-    // // print rotation change
-    // for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-    // {
-    //   i->print_rotation_change();
-    // }
-
-    
-    // left_front.set_target(1);
-    // std::cout << left_front.target_power << std::endl;
-    // std::cout << left_front.target_power_get() << std::endl;
-    // std::cout << left_front.print_target_power_bool << ',' << std::flush;
-    // left_front.print_target_power();
-
-    
-    // if (left_front.print_target_power_bool)
-    // {
-    //   std::cout << left_front.target_power_get() << "," << std::flush;
-    // }
-
-    // int thing = 0;
-    left_front.target_power = 1;
-    std::cout << left_front.target_power << ',' << std::flush;
-
-    left_back.target_power = 1;
-    std::cout << left_back.target_power << ',' << std::flush;
-    
-    
+    for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+    {
+      i->print_rotation();
+    }
+    // print rotation change
+    for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+    {
+      i->print_rotation_change();
+    }
     
     for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
     {
-      // thing += 1;
-      // i->print_target_power();
-      // i->target_power = 1;
-
-      // left_front.print_target_power();
-
-      // left_front.target_power = 1;
-      // std::cout << left_front.target_power << std::flush;
       std::cout << it->target_power << std::flush;
     }
-
-
-    // std::cout << "  , " << thing << std::flush;
-
-    // Brain.Screen.newLine(); Brain.Screen.print("tray auto: %d", user_arm_tray_1_tray_automatic);
-    // Brain.Screen.newLine(); Brain.Screen.print("arm auto: %d", user_arm_tray_1_arm_automatic);
-    // Brain.Screen.newLine(); Brain.Screen.print("hello");
-
-    std::cout << std::endl;
-
-    // std::cout << "0" << std::endl;
-
+    
+    std::cout << "0" << std::endl;
   }
 }

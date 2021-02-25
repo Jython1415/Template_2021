@@ -18,11 +18,6 @@ void chassis_set (int input)
   left_set(input);
   right_set(input);
 }
-void intake_set (int input)
-{
-  intake_l.set_target(input);
-  intake_r.set_target(input);
-}
 void motors_set (int input)
 {
   for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
@@ -88,11 +83,6 @@ void chassis_reset_rotation ()
 {
   left_rotation_reset();
   right_rotation_reset();
-}
-void intake_rotation_reset ()
-{
-  intake_l.rotation_reset();
-  intake_r.rotation_reset();
 }
 void motors_rotation_reset ()
 {
