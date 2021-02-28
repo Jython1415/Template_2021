@@ -75,6 +75,7 @@ void usercontrol( void )
     motors_update_rotation_vars();
 
     // usercontrol functions here
+    user_tank_1();
 
     // slew rate & such
     motors_update_vars();
