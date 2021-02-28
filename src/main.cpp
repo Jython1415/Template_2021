@@ -65,7 +65,7 @@ void usercontrol( void )
   motors_rotation_reset();
   debug_print_initial();
   
-  // set brakemodes here
+  motors_update_brake_type();
 
   while (true)
   {

@@ -16,6 +16,7 @@ void motors_update_power_vel     () ; // update power vel
 void motors_update_power_vol     () ; // update power vol
 void motors_update_power         () ; // update power
 void motors_update_rotation_vars () ; // update rotation vars
+void motors_update_brake_type    () ; // update brake type
 
 // reset rotation =================================================================================
 void left_rotation_reset    ();

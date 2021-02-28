@@ -67,6 +67,14 @@ void motors_update_rotation_vars ()
     it->update_rotation_vars();
   }
 }
+// update brake types
+void motors_update_brake_type ()
+{
+  for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
+  {
+    it->update_brake_type();
+  }
+}
 
 // reset rotation =================================================================================
 void left_rotation_reset ()
