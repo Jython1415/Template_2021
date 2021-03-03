@@ -1,8 +1,6 @@
 #ifndef _autonomous_routes_H_
 #define _autonomous_routes_H_
 
-#include "sejun_code.h"
-
 void auton_route_wait (int input) ;
 
 void auton_route_testing_4 () ;

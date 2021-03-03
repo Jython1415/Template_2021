@@ -1,4 +1,3 @@
-// adding arm_tray_intake_1()
 #include "vex.h"
 #include "pragma.h"
 #include "controller.h"
