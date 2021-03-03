@@ -1,4 +1,3 @@
-// adding arm_tray_intake_1()
 #include "vex.h"
 #include "pragma.h"
 #include "controller.h"
@@ -12,7 +11,7 @@
 // recording mode =================================================================================
 #define RECORDING_MODE 0
 // auton selection ================================================================================
-#define AUTON_ROUTE -1
+#define AUTON_ROUTE 0
 
 // actions inside this functions will be performed once  after the robot is powered on ============
 void pre_auton( void )
@@ -56,18 +55,6 @@ void autonomous( void )
     case 5  :
       auton_route_5();
       break;
-    case 6  :
-      auton_route_6();
-      break;
-    case 11 :
-      auton_route_11();
-      break;
-    case 12 :
-      auton_route_12();
-      default:
-    case 13 :
-      auton_route_13();
-      break;
   }
 }
 
@@ -77,8 +64,7 @@ void usercontrol( void )
   motors_rotation_reset();
   debug_print_initial();
   
-  arm.setBrake(vex::brakeType::hold);
-  tray.setBrake(vex::brakeType::hold);
+  motors_update_brake_type();
 
   while (true)
   {
@@ -87,8 +73,8 @@ void usercontrol( void )
     ctlr_updateVars();
     motors_update_rotation_vars();
 
-    user_tank_2();
-    user_TIA_1();
+    // usercontrol functions here
+    user_tank_1();
 
     // slew rate & such
     motors_update_vars();

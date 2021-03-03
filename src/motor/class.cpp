@@ -88,6 +88,25 @@ void Motor::update_rotation_vars ()
   update_rotation_change();
 }
 
+void Motor::update_brake_type ()
+{
+  switch (brake_type)
+  {
+    case 0:
+      setBrake(vex::brakeType::coast);
+      break;
+    case 1:
+      setBrake(vex::brakeType::brake);
+      break;
+    case 2:
+      setBrake(vex::brakeType::hold);
+      break;
+    default:
+      setBrake(vex::brakeType::undefined);
+      break;
+  }
+}
+
 // reset rotation =============================================================================
 void Motor::rotation_reset ()
 {
@@ -145,6 +164,7 @@ void Motor::print_rotation_change ()
 
   }
 }
+
 // print initial functions ====================================================================
 void Motor::print_initial_actual_power ()
 {

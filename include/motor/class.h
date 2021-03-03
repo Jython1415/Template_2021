@@ -43,6 +43,7 @@ class Motor: public vex::motor {
     void update_rotation_prev () ;
     void update_rotation_change () ;
     void update_rotation_vars () ;
+    void update_brake_type () ;
 
     // reset rotation =============================================================================
     void rotation_reset () ;
