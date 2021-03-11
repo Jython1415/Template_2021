@@ -4,6 +4,24 @@
 #include "vex.h"
 #include "pragma.h"
 
+// whether or not to print the following values in the debug menu
+extern int ctlr_axis1_debug       ;
+extern int ctlr_axis2_debug       ;
+extern int ctlr_axis3_debug       ;
+extern int ctlr_axis4_debug       ;
+extern int ctlr_buttonR1_debug    ;
+extern int ctlr_buttonR2_debug    ;
+extern int ctlr_buttonL1_debug    ;
+extern int ctlr_buttonL2_debug    ;
+extern int ctlr_buttonA_debug     ;
+extern int ctlr_buttonB_debug     ;
+extern int ctlr_buttonX_debug     ;
+extern int ctlr_buttonY_debug     ;
+extern int ctlr_buttonUP_debug    ;
+extern int ctlr_buttonDOWN_debug  ;
+extern int ctlr_buttonLEFT_debug  ;
+extern int ctlr_buttonRIGHT_debug ;
+
 // stores current axis values
 extern int ctlr_axis1       ;
 extern int ctlr_axis2       ;

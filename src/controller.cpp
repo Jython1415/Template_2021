@@ -1,6 +1,25 @@
 #include "vex.h"
 #include "pragma.h"
 
+// DEBUG OPTIONS
+// whether or not to print the following values in the debug menu
+int ctlr_axis1_debug       = 0 ;
+int ctlr_axis2_debug       = 0 ;
+int ctlr_axis3_debug       = 0 ;
+int ctlr_axis4_debug       = 0 ;
+int ctlr_buttonR1_debug    = 0 ;
+int ctlr_buttonR2_debug    = 0 ;
+int ctlr_buttonL1_debug    = 0 ;
+int ctlr_buttonL2_debug    = 0 ;
+int ctlr_buttonA_debug     = 0 ;
+int ctlr_buttonB_debug     = 0 ;
+int ctlr_buttonX_debug     = 0 ;
+int ctlr_buttonY_debug     = 0 ;
+int ctlr_buttonUP_debug    = 0 ;
+int ctlr_buttonDOWN_debug  = 0 ;
+int ctlr_buttonLEFT_debug  = 0 ;
+int ctlr_buttonRIGHT_debug = 0 ;
+
 // has current axis value, -100~100
 int ctlr_axis1       = 0 ;
 int ctlr_axis2       = 0 ;
@@ -161,4 +180,35 @@ void ctlr_updateVars()
   ctlr_buttonDOWN_duration  = (ctlr_buttonDOWN ) ? ctlr_buttonDOWN_duration  + 20 : 0;
   ctlr_buttonLEFT_duration  = (ctlr_buttonLEFT ) ? ctlr_buttonLEFT_duration  + 20 : 0;
   ctlr_buttonRIGHT_duration = (ctlr_buttonRIGHT) ? ctlr_buttonRIGHT_duration + 20 : 0;
+}
+
+// DEBUG CODE
+// shortcuts for easy adjustment of the code
+// CPL stands for CONTROLLER_PRINT_LOOP
+#define CPL_1 Brain.Screen.print(
+#define CPL_2 ); std::cout <<
+#define CPL_3 << "," << std::flush; Brain.Screen.newLine();
+// the above code helps produce the following:
+// void ctlr_axis1_debug_print_loop()
+// {
+//   Brain.Screen.print("axis 1: %d", ctlr_axis1);
+//   std::cout << ctlr_axis1 << "," << std::flush;
+//   Brain.Screen.newLine();
+// }
+
+void ctlr_axis1_debug_print_loop()
+{
+  CPL_1 "axis 1: %d", ctlr_axis3 CPL_2 ctlr_axis3 CPL_3
+}
+void ctlr_axis2_debug_print_loop()
+{
+  CPL_1 "axis 2: %d", ctlr_axis3 CPL_2 ctlr_axis3 CPL_3
+}
+void ctlr_axis3_debug_print_loop()
+{
+  CPL_1 "axis 3: %d", ctlr_axis3 CPL_2 ctlr_axis3 CPL_3
+}
+void ctlr_axis4_debug_print_loop()
+{
+  CPL_1 "axis 4: %d", ctlr_axis4 CPL_2 ctlr_axis3 CPL_3
 }

@@ -24,17 +24,23 @@ void debug_updateVar ()
   }
 }
 
-// for printing motor position ====================================================================
-
 // for printing other values ======================================================================
+// controller values
+void debug_print_controller_loop()
+{
+  
+}
 
 // initial print functions ========================================================================
+
+//consolidated intial print function
 void debug_print_initial ()
 {
   // first line
   std::cout << "debug count," << std::flush;
 
-  // initial print function
+  // initial print functions
+  //print actual power
   for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
   {
     i->print_initial_actual_power();
