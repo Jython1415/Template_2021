@@ -196,6 +196,7 @@ void ctlr_updateVars()
 //   Brain.Screen.newLine();
 // }
 
+// loop functions
 void ctlr_axis1_debug_print_loop()
 {
   CPL_1 "axis 1: %d", ctlr_axis3 CPL_2 ctlr_axis3 CPL_3
@@ -259,4 +260,110 @@ void ctlr_buttonLEFT_debug_print_loop()
 void ctlr_buttonRIGHT_debug_print_loop()
 {
   CPL_1 "button RIGHT: %d", ctlr_buttonY CPL_2 ctlr_buttonY CPL_3
+}
+
+// initial print functions
+void ctlr_axis1_debug_print_initial()
+{
+  std::cout << "axis 1," << std::flush;
+}
+void ctlr_axis2_debug_print_initial()
+{
+  std::cout << "axis 2," << std::flush;
+}
+void ctlr_axis3_debug_print_initial()
+{
+  std::cout << "axis 3," << std::flush;
+}
+void ctlr_axis4_debug_print_initial()
+{
+  std::cout << "axis 4," << std::flush;
+}
+void ctlr_buttonR1_debug_print_initial()
+{
+  std::cout << "buttonR1," << std::flush;
+}
+void ctlr_buttonR2_debug_print_initial()
+{
+  std::cout << "buttonR2," << std::flush;
+}
+void ctlr_buttonL1_debug_print_initial()
+{
+  std::cout << "buttonL1," << std::flush;
+}
+void ctlr_buttonL2_debug_print_initial()
+{
+  std::cout << "buttonL2," << std::flush;
+}
+void ctlr_buttonA_debug_print_initial()
+{
+  std::cout << "buttonA," << std::flush;
+}
+void ctlr_buttonB_debug_print_initial()
+{
+  std::cout << "buttonB," << std::flush;
+}
+void ctlr_buttonX_debug_print_initial()
+{
+  std::cout << "buttonX," << std::flush;
+}
+void ctlr_buttonY_debug_print_initial()
+{
+  std::cout << "buttonY," << std::flush;
+}
+void ctlr_buttonUP_debug_print_initial()
+{
+  std::cout << "buttonUP," << std::flush;
+}
+void ctlr_buttonDOWN_debug_print_initial()
+{
+  std::cout << "buttonDOWN," << std::flush;
+}
+void ctlr_buttonLEFT_debug_print_initial()
+{
+  std::cout << "buttonLEFT," << std::flush;
+}
+void ctlr_buttonRIGHT_debug_print_initial()
+{
+  std::cout << "buttonRIGHT," << std::flush;
+}
+
+// combined controller functions
+void ctlr_debug_print_loop()
+{
+  if (ctlr_axis1_debug) { ctlr_axis1_debug_print_loop();}
+  if (ctlr_axis2_debug) { ctlr_axis2_debug_print_loop();}
+  if (ctlr_axis3_debug) { ctlr_axis3_debug_print_loop();}
+  if (ctlr_axis4_debug) { ctlr_axis4_debug_print_loop();}
+  if (ctlr_buttonR1_debug) { ctlr_buttonR1_debug_print_loop();}
+  if (ctlr_buttonR2_debug) { ctlr_buttonR2_debug_print_loop();}
+  if (ctlr_buttonL1_debug) { ctlr_buttonL1_debug_print_loop();}
+  if (ctlr_buttonL2_debug) { ctlr_buttonL2_debug_print_loop();}
+  if (ctlr_buttonA_debug) { ctlr_buttonA_debug_print_loop();}
+  if (ctlr_buttonB_debug) { ctlr_buttonB_debug_print_loop();}
+  if (ctlr_buttonX_debug) { ctlr_buttonX_debug_print_loop();}
+  if (ctlr_buttonY_debug) { ctlr_buttonY_debug_print_loop();}
+  if (ctlr_buttonUP_debug) { ctlr_buttonUP_debug_print_loop();}
+  if (ctlr_buttonDOWN_debug) { ctlr_buttonDOWN_debug_print_loop();}
+  if (ctlr_buttonLEFT_debug) { ctlr_buttonLEFT_debug_print_loop();}
+  if (ctlr_buttonRIGHT_debug) { ctlr_buttonRIGHT_debug_print_loop();}
+}
+void ctlr_debug_print_initial()
+{
+  if (ctlr_axis1_debug) { ctlr_axis1_debug_print_initial();}
+  if (ctlr_axis2_debug) { ctlr_axis2_debug_print_initial();}
+  if (ctlr_axis3_debug) { ctlr_axis3_debug_print_initial();}
+  if (ctlr_axis4_debug) { ctlr_axis4_debug_print_initial();}
+  if (ctlr_buttonR1_debug) { ctlr_buttonR1_debug_print_initial();}
+  if (ctlr_buttonR2_debug) { ctlr_buttonR2_debug_print_initial();}
+  if (ctlr_buttonL1_debug) { ctlr_buttonL1_debug_print_initial();}
+  if (ctlr_buttonL2_debug) { ctlr_buttonL2_debug_print_initial();}
+  if (ctlr_buttonA_debug) { ctlr_buttonA_debug_print_initial();}
+  if (ctlr_buttonB_debug) { ctlr_buttonB_debug_print_initial();}
+  if (ctlr_buttonX_debug) { ctlr_buttonX_debug_print_initial();}
+  if (ctlr_buttonY_debug) { ctlr_buttonY_debug_print_initial();}
+  if (ctlr_buttonUP_debug) { ctlr_buttonUP_debug_print_initial();}
+  if (ctlr_buttonDOWN_debug) { ctlr_buttonDOWN_debug_print_initial();}
+  if (ctlr_buttonLEFT_debug) { ctlr_buttonLEFT_debug_print_initial();}
+  if (ctlr_buttonRIGHT_debug) { ctlr_buttonRIGHT_debug_print_initial();}
 }

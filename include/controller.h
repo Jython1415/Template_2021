@@ -105,4 +105,44 @@ extern int ctlr_buttonRIGHT_duration ;
 // update function to run each cycle of the usercontrol while loop
 void ctlr_updateVars();
 
+// loop
+void ctlr_axis1_debug_print_loop();
+void ctlr_axis2_debug_print_loop();
+void ctlr_axis3_debug_print_loop();
+void ctlr_axis4_debug_print_loop();
+void ctlr_buttonR1_debug_print_loop();
+void ctlr_buttonR2_debug_print_loop();
+void ctlr_buttonL1_debug_print_loop();
+void ctlr_buttonL2_debug_print_loop();
+void ctlr_buttonA_debug_print_loop();
+void ctlr_buttonB_debug_print_loop();
+void ctlr_buttonX_debug_print_loop();
+void ctlr_buttonY_debug_print_loop();
+void ctlr_buttonUP_debug_print_loop();
+void ctlr_buttonDOWN_debug_print_loop();
+void ctlr_buttonLEFT_debug_print_loop();
+void ctlr_buttonRIGHT_debug_print_loop();
+
+// initial
+void ctlr_axis1_debug_print_initial();
+void ctlr_axis2_debug_print_initial();
+void ctlr_axis3_debug_print_initial();
+void ctlr_axis4_debug_print_initial();
+void ctlr_buttonR1_debug_print_initial();
+void ctlr_buttonR2_debug_print_initial();
+void ctlr_buttonL1_debug_print_initial();
+void ctlr_buttonL2_debug_print_initial();
+void ctlr_buttonA_debug_print_initial();
+void ctlr_buttonB_debug_print_initial();
+void ctlr_buttonX_debug_print_initial();
+void ctlr_buttonY_debug_print_initial();
+void ctlr_buttonUP_debug_print_initial();
+void ctlr_buttonDOWN_debug_print_initial();
+void ctlr_buttonLEFT_debug_print_initial();
+void ctlr_buttonRIGHT_debug_print_initial();
+
+// combined debug functions
+void ctlr_debug_print_loop();
+void ctlr_debug_print_initial();
+
 #endif
