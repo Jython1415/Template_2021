@@ -212,3 +212,51 @@ void ctlr_axis4_debug_print_loop()
 {
   CPL_1 "axis 4: %d", ctlr_axis4 CPL_2 ctlr_axis3 CPL_3
 }
+void ctlr_buttonR1_debug_print_loop()
+{
+  CPL_1 "button R1: %d", ctlr_buttonR1 CPL_2 ctlr_buttonR1 CPL_3
+}
+void ctlr_buttonR2_debug_print_loop()
+{
+  CPL_1 "button R2: %d", ctlr_buttonR2 CPL_2 ctlr_buttonR2 CPL_3
+}
+void ctlr_buttonL1_debug_print_loop()
+{
+  CPL_1 "button L1: %d", ctlr_buttonL1 CPL_2 ctlr_buttonL1 CPL_3
+}
+void ctlr_buttonL2_debug_print_loop()
+{
+  CPL_1 "button L2: %d", ctlr_buttonL2 CPL_2 ctlr_buttonL2 CPL_3
+}
+void ctlr_buttonA_debug_print_loop()
+{
+  CPL_1 "button A: %d", ctlr_buttonA CPL_2 ctlr_buttonA CPL_3
+}
+void ctlr_buttonB_debug_print_loop()
+{
+  CPL_1 "button B: %d", ctlr_buttonB CPL_2 ctlr_buttonB CPL_3
+}
+void ctlr_buttonX_debug_print_loop()
+{
+  CPL_1 "button X: %d", ctlr_buttonX CPL_2 ctlr_buttonX CPL_3
+}
+void ctlr_buttonY_debug_print_loop()
+{
+  CPL_1 "button Y: %d", ctlr_buttonY CPL_2 ctlr_buttonY CPL_3
+}
+void ctlr_buttonUP_debug_print_loop()
+{
+  CPL_1 "button UP: %d", ctlr_buttonUP CPL_2 ctlr_buttonUP CPL_3
+}
+void ctlr_buttonDOWN_debug_print_loop()
+{
+  CPL_1 "button DOWN: %d", ctlr_buttonDOWN CPL_2 ctlr_buttonDOWN CPL_3
+}
+void ctlr_buttonLEFT_debug_print_loop()
+{
+  CPL_1 "button LEFT: %d", ctlr_buttonLEFT CPL_2 ctlr_buttonLEFT CPL_3
+}
+void ctlr_buttonRIGHT_debug_print_loop()
+{
+  CPL_1 "button RIGHT: %d", ctlr_buttonY CPL_2 ctlr_buttonY CPL_3
+}
