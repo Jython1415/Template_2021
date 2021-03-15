@@ -25,11 +25,6 @@ void debug_updateVar ()
 }
 
 // for printing other values ======================================================================
-// controller values
-void debug_print_controller_loop()
-{
-  
-}
 
 // initial print functions ========================================================================
 

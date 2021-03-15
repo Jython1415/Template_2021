@@ -4,8 +4,8 @@
 // DEBUG OPTIONS
 // whether or not to print the following values in the debug menu
 int ctlr_axis1_debug       = 0 ;
-int ctlr_axis2_debug       = 0 ;
-int ctlr_axis3_debug       = 0 ;
+int ctlr_axis2_debug       = 1 ;
+int ctlr_axis3_debug       = 1 ;
 int ctlr_axis4_debug       = 0 ;
 int ctlr_buttonR1_debug    = 0 ;
 int ctlr_buttonR2_debug    = 0 ;
@@ -199,11 +199,11 @@ void ctlr_updateVars()
 // loop functions
 void ctlr_axis1_debug_print_loop()
 {
-  CPL_1 "axis 1: %d", ctlr_axis3 CPL_2 ctlr_axis3 CPL_3
+  CPL_1 "axis 1: %d", ctlr_axis1 CPL_2 ctlr_axis1 CPL_3
 }
 void ctlr_axis2_debug_print_loop()
 {
-  CPL_1 "axis 2: %d", ctlr_axis3 CPL_2 ctlr_axis3 CPL_3
+  CPL_1 "axis 2: %d", ctlr_axis2 CPL_2 ctlr_axis2 CPL_3
 }
 void ctlr_axis3_debug_print_loop()
 {
@@ -211,7 +211,7 @@ void ctlr_axis3_debug_print_loop()
 }
 void ctlr_axis4_debug_print_loop()
 {
-  CPL_1 "axis 4: %d", ctlr_axis4 CPL_2 ctlr_axis3 CPL_3
+  CPL_1 "axis 4: %d", ctlr_axis4 CPL_2 ctlr_axis4 CPL_3
 }
 void ctlr_buttonR1_debug_print_loop()
 {
@@ -259,7 +259,7 @@ void ctlr_buttonLEFT_debug_print_loop()
 }
 void ctlr_buttonRIGHT_debug_print_loop()
 {
-  CPL_1 "button RIGHT: %d", ctlr_buttonY CPL_2 ctlr_buttonY CPL_3
+  CPL_1 "button RIGHT: %d", ctlr_buttonRIGHT CPL_2 ctlr_buttonRIGHT CPL_3
 }
 
 // initial print functions
