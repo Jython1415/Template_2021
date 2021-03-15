@@ -61,6 +61,8 @@ void debug_print_initial ()
     i->print_initial_rotation_change();
   }
 
+  ctlr_debug_print_initial();
+
   std::cout << "blank" << std::endl;
 }
 
@@ -96,11 +98,8 @@ void debug_print ()
       i->print_rotation_change();
     }
     
-    for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
-    {
-      std::cout << it->target_power << std::flush;
-    }
-    
+    ctlr_debug_print_loop();
+
     std::cout << "0" << std::endl;
   }
 }
