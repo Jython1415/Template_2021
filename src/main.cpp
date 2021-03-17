@@ -74,7 +74,8 @@ void usercontrol( void )
     motors_update_rotation_vars();
 
     // usercontrol functions here
-    user_tank_1();
+    // user_tank_1();
+    testing_motor.set_target(ctlr_axis3);
 
     // slew rate & such
     motors_update_vars();
