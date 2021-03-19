@@ -17,12 +17,6 @@ vex::controller Controller_1 = vex::controller();
 // Motor right_front ( "right front"  , vex::PORT5  , false   , 0          , false , false    , false   , true    , false , false );
 // Motor right_back  ( "right back"   , vex::PORT8  , true    , 0          , false , false    , false   , true    , false , false );
 
-
-
-
-
-
-
 // port 2, brake-mode 0, actual power and target power debug on.
 Motor testing_motor("testing", vex::PORT2, false, 0, false, false, true, true, false, false);
 
