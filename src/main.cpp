@@ -21,41 +21,41 @@ void pre_auton( void )
 // all code for the autonomous section goes in here ===============================================
 void autonomous( void )
 {
-  auton_standard_initialize();
+//   auton_standard_initialize();
 
-  switch (AUTON_ROUTE)
-  {
-    case -4  :
-      auton_route_testing_4();
-      break;
-    case -3  :
-      auton_route_testing_3();
-      break;
-    case -2  :
-      auton_route_testing_2();
-      break;
-    case -1  :
-      auton_route_testing_1();
-      break;
-    case 0  : // nothing
-      auton_route_0();
-      break;
-    case 1  :
-      auton_route_1();
-      break;
-    case 2  :
-      auton_route_2();
-      break;
-    case 3  :
-      auton_route_3();
-      break;
-    case 4  :
-      auton_route_4();
-      break;
-    case 5  :
-      auton_route_5();
-      break;
-  }
+//   switch (AUTON_ROUTE)
+//   {
+//     case -4  :
+//       auton_route_testing_4();
+//       break;
+//     case -3  :
+//       auton_route_testing_3();
+//       break;
+//     case -2  :
+//       auton_route_testing_2();
+//       break;
+//     case -1  :
+//       auton_route_testing_1();
+//       break;
+//     case 0  : // nothing
+//       auton_route_0();
+//       break;
+//     case 1  :
+//       auton_route_1();
+//       break;
+//     case 2  :
+//       auton_route_2();
+//       break;
+//     case 3  :
+//       auton_route_3();
+//       break;
+//     case 4  :
+//       auton_route_4();
+//       break;
+//     case 5  :
+//       auton_route_5();
+//       break;
+//   }
 }
 
 // all code for the usercontrol section goes in here ==============================================
