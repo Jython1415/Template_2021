@@ -75,15 +75,17 @@ void usercontrol( void )
 
     // usercontrol functions here
     // user_tank_1();
-    testing_motor.set_target(ctlr_axis3);
+    // testing_motor.set_target(ctlr_axis2);
+    // testing_motor.target_power = 100;
 
     // slew rate & such
     motors_update_vars();
 
     // set power to the motors unless we're recording right now
-    if (!RECORDING_MODE) { motors_update_power(); }
+    // if (!RECORDING_MODE) { motors_update_power(); }
 
     // print to console & the brain's screen
+    testing_motor.set_target(100);
     debug_print();
 
     //Sleep the task for a short amount of time to prevent wasted resources. 
