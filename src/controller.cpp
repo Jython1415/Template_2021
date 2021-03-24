@@ -5,7 +5,7 @@
 // whether or not to print the following values in the debug menu
 int ctlr_axis1_debug       = 0 ;
 int ctlr_axis2_debug       = 1 ;
-int ctlr_axis3_debug       = 1 ;
+int ctlr_axis3_debug       = 0 ;
 int ctlr_axis4_debug       = 0 ;
 int ctlr_buttonR1_debug    = 0 ;
 int ctlr_buttonR2_debug    = 0 ;
