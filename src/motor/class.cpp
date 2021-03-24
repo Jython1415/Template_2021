@@ -1,9 +1,11 @@
+#include "pragma.h"
 #include "motor/class.h"
 
 // ================================================================================================
 void Motor::set_target (int input)
 {
-  target_power = math_restrict_i(input, -100, 100);
+  // target_power = math_restrict_i(input, -100, 100);
+  target_power = input;
 }
 
 // update functions ===============================================================================
