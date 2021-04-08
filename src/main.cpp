@@ -76,11 +76,10 @@ void usercontrol( void )
     // usercontrol functions here
     // user_tank_1();
     tm.set_target(ctlr_axis2);
-    // testing_motor.target_power = 100;
 
     // slew rate & such
-    // motors_update_vars();
-    tm.actual_power = tm.target_power;
+    motors_update_vars();
+    // tm.update_vars();
 
     // set power to the motors unless we're recording right now
     // if (!RECORDING_MODE) { motors_update_power(); }
