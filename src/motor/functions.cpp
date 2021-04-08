@@ -30,9 +30,10 @@
 // update vars
 void motors_update_vars ()
 {
-  for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
+  for (std::list<Motor>::iterator it = Motors.begin(); it != Motors.end(); ++it)
   {
-    it->update_vars();
+    // it->update_vars();
+    it -> tf_1();
   }
 }
 // update power vel
