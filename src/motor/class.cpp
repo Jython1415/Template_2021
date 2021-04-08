@@ -36,13 +36,13 @@ void Motor::update_vars_slew ()
 
 void Motor::update_vars ()
 {
-  if (update_vars_mode)
+  if (!update_vars_mode)
   {
-    update_vars_slew();
+    update_vars_direct();
   }
   else
   {
-    update_vars_direct();
+    update_vars_slew();
   }
 }
 
@@ -231,6 +231,12 @@ void Motor::slew_rate_set (int input_rate)
 void Motor::update_power_mode_set (bool input_bool)
 {
   update_power_mode = input_bool;
+}
+
+// testing stuff ==============================================================================
+void Motor::tf_1 ()
+{
+  std::cout << "yolo";
 }
 
 // contructor =================================================================================

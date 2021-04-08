@@ -71,6 +71,9 @@ class Motor: public vex::motor {
     void slew_rate_set (int input_rate) ;
     void update_power_mode_set (bool input_bool) ;
 
+    // testing functions ==========================================================================
+    void tf_1 () ;
+
     // contructor =================================================================================
     Motor (std::string name_input, int index, bool reverse, int brake_type_input, bool update_vars_mode_input, bool update_power_mode_input, bool print_rotation_input, bool print_actual_power_input, bool print_target_power_input, bool print_rotation_change_input) ;
 };
