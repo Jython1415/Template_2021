@@ -13,8 +13,11 @@ extern vex::controller Controller_1 ;
 // extern Motor left_back   ;
 // extern Motor right_front ;
 // extern Motor right_back  ;
-extern Motor tm;
+extern Motor_v2 tm;
+extern Motor_v2 *temp_1;
+void initialize_pragma ();
 
-extern std::list<Motor> Motors ;
+// extern std::list<Motor_v2> Motors ;
+extern int Motors ;
 
 #endif

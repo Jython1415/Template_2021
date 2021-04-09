@@ -16,6 +16,7 @@
 // actions inside this functions will be performed once  after the robot is powered on ============
 void pre_auton( void )
 {
+  initialize_pragma();
 }
 
 // all code for the autonomous section goes in here ===============================================

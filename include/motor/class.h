@@ -18,7 +18,7 @@
 #define INTAKE_R_UPDATE_VARS_MODE 0
 #define TILTER_UPDATE_VARS_MODE   0
 
-class Motor: public vex::motor {
+class Motor_v2: public vex::motor {
   public:
   // protected: // ===================================================================================
     std::string name;
@@ -72,10 +72,10 @@ class Motor: public vex::motor {
     void update_power_mode_set (bool input_bool) ;
 
     // testing functions ==========================================================================
-    void tf_1 () ;
+    void tf_1 (Motor_v2 Motor_input) ;
 
     // contructor =================================================================================
-    Motor (std::string name_input, int index, bool reverse, int brake_type_input, bool update_vars_mode_input, bool update_power_mode_input, bool print_rotation_input, bool print_actual_power_input, bool print_target_power_input, bool print_rotation_change_input) ;
+    Motor_v2 (std::string name_input, int index, bool reverse, int brake_type_input, bool update_vars_mode_input, bool update_power_mode_input, bool print_rotation_input, bool print_actual_power_input, bool print_target_power_input, bool print_rotation_change_input) ;
 };
 
 #endif

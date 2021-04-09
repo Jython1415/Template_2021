@@ -30,7 +30,7 @@
 // update vars
 void motors_update_vars ()
 {
-  for (std::list<Motor>::iterator it = Motors.begin(); it != Motors.end(); ++it)
+  for (auto it = Motors.begin(); it != Motors.end(); ++it)
   {
     // it->update_vars();
     it -> tf_1();
@@ -39,7 +39,7 @@ void motors_update_vars ()
 // update power vel
 void motors_update_power_vel ()
 {
-  for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
+  for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
   {
     it->update_power_vel();
   }
@@ -47,7 +47,7 @@ void motors_update_power_vel ()
 // update power vol
 void motors_update_power_vol ()
 {
-  for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
+  for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
   {
     it->update_power_vol();
   }
@@ -55,7 +55,7 @@ void motors_update_power_vol ()
 // update power
 void motors_update_power ()
 {
-  for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
+  for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
   {
     it->update_power();
   }
@@ -63,7 +63,7 @@ void motors_update_power ()
 // update rotation vars
 void motors_update_rotation_vars ()
 {
-  for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
+  for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
   {
     it->update_rotation_vars();
   }
@@ -71,7 +71,7 @@ void motors_update_rotation_vars ()
 // update brake types
 void motors_update_brake_type ()
 {
-  for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
+  for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
   {
     it->update_brake_type();
   }
@@ -95,7 +95,7 @@ void motors_update_brake_type ()
 // }
 void motors_rotation_reset ()
 {
-  for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
+  for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
   {
     it->rotation_reset();
   }

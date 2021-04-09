@@ -36,22 +36,22 @@ void debug_print_initial ()
 
   // initial print functions
   //print actual power
-  for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+  for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
   {
     i->print_initial_actual_power();
   }
   // print target power
-  for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+  for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
   {
     i->print_initial_target_power();
   }
   // print rotation
-  for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+  for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
   {
     i->print_initial_rotation();
   }
   // print rotation change
-  for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+  for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
   {
     i->print_initial_rotation_change();
   }
@@ -73,22 +73,22 @@ void debug_print ()
     std::cout << "," << std::flush;
     
     // print actual power
-    for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+    for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
     {
       i->print_actual_power();
     }
     // print target power
-    for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+    for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
     {
       i->print_target_power();
     }
     // print rotation
-    for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+    for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
     {
       i->print_rotation();
     }
     // print rotation change
-    for (std::list<Motor>::iterator i=Motors.begin(); i != Motors.end(); ++i)
+    for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
     {
       i->print_rotation_change();
     }
