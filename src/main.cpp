@@ -17,6 +17,7 @@
 void pre_auton( void )
 {
   initialize_pragma();
+  motors_update_brake_type();
 }
 
 // all code for the autonomous section goes in here ===============================================
@@ -64,8 +65,6 @@ void usercontrol( void )
 {
   motors_rotation_reset();
   debug_print_initial();
-  
-  motors_update_brake_type();
 
   while (true)
   {

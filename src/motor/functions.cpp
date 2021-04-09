@@ -33,7 +33,7 @@ void motors_update_vars ()
   for (auto it = Motors.begin(); it != Motors.end(); ++it)
   {
     // it->update_vars();
-    it -> tf_1();
+    it -> tf_1(it->);
   }
 }
 // update power vel
