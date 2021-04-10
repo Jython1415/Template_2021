@@ -33,4 +33,4 @@ void initialize_pragma()
 // };
 
 // std::list<Motor_v2> Motors = {tm};
- Motors[1] = {temp_1};
+Motor_v2 * Motors[1] = {temp_1};
