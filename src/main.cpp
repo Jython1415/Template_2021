@@ -13,7 +13,7 @@
 // auton selection ================================================================================
 #define AUTON_ROUTE 0
 
-// actions inside this functions will be performed once  after the robot is powered on ============
+// actions inside this functions will be performed once after the robot is powered on =============
 void pre_auton( void )
 {
   initialize_pragma();
