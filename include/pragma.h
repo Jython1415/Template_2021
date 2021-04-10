@@ -18,6 +18,6 @@ extern Motor_v2 *temp_1;
 void initialize_pragma ();
 
 // extern std::list<Motor_v2> Motors ;
-extern Motor_v2 * Motors ;
+extern std::vector<Motor_v2 *> Motors ;
 
 #endif
