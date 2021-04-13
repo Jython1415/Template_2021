@@ -38,11 +38,11 @@ void Motor_v2::update_vars ()
 {
   if (!update_vars_mode)
   {
-    update_vars_direct();
+    Motor_v2::update_vars_direct();
   }
   else
   {
-    update_vars_slew();
+    Motor_v2::update_vars_slew();
   }
 }
 
@@ -85,9 +85,9 @@ void Motor_v2::update_rotation_change ()
 
 void Motor_v2::update_rotation_vars ()
 {
-  update_rotation_prev();
-  update_rotation();
-  update_rotation_change();
+  Motor_v2::update_rotation_prev();
+  Motor_v2::update_rotation();
+  Motor_v2::update_rotation_change();
 }
 
 void Motor_v2::update_brake_type ()
