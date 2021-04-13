@@ -36,25 +36,25 @@ void debug_print_initial ()
 
   // initial print functions
   //print actual power
-  // for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-  // {
-  //   i->print_initial_actual_power();
-  // }
+  for (int i = 0; i < Motors.size(); i++)
+  {
+    (*Motors[i]).print_initial_actual_power();
+  }
   // // print target power
-  // for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-  // {
-  //   i->print_initial_target_power();
-  // }
+  for (int i = 0; i < Motors.size(); i++)
+  {
+    (*Motors[i]).print_initial_target_power();
+  }
   // // print rotation
-  // for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-  // {
-  //   i->print_initial_rotation();
-  // }
+  for (int i = 0; i < Motors.size(); i++)
+  {
+    (*Motors[i]).print_initial_rotation();
+  }
   // // print rotation change
-  // for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-  // {
-  //   i->print_initial_rotation_change();
-  // }
+  for (int i = 0; i < Motors.size(); i++)
+  {
+    (*Motors[i]).print_initial_rotation_change();
+  }
 
   ctlr_debug_print_initial();
 
@@ -73,25 +73,25 @@ void debug_print ()
     std::cout << "," << std::flush;
     
     // print actual power
-    // for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-    // {
-    //   i->print_actual_power();
-    // }
+    for (int i = 0; i < Motors.size(); i++)
+    {
+      (*Motors[i]).print_actual_power();
+    }
     // // print target power
-    // for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-    // {
-    //   i->print_target_power();
-    // }
+    for (int i = 0; i < Motors.size(); i++)
+    {
+      (*Motors[i]).print_target_power();
+    }
     // // print rotation
-    // for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-    // {
-    //   i->print_rotation();
-    // }
+    for (int i = 0; i < Motors.size(); i++)
+    {
+      (*Motors[i]).print_rotation();
+    }
     // // print rotation change
-    // for (std::list<Motor_v2>::iterator i=Motors.begin(); i != Motors.end(); ++i)
-    // {
-    //   i->print_rotation_change();
-    // }
+    for (int i = 0; i < Motors.size(); i++)
+    {
+      (*Motors[i]).print_rotation_change();
+    }
     
     ctlr_debug_print_loop();
 
