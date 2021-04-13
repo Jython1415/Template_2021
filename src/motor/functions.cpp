@@ -18,68 +18,63 @@
 //   left_set(input);
 //   right_set(input);
 // }
-// void motors_set (int input)
-// {
-//   for (std::list<Motor>::iterator it=Motors.begin(); it != Motors.end(); ++it)
-//   {
-//     it->set_target(input);
-//   }
-// }
+void motors_set (int input)
+{
+  for (int i = 0; i < Motors.size(); i++)
+  {
+    (*Motors[i]).set_target(input);
+  }
+}
 
 // update functions  ==============================================================================
 // update vars
 void motors_update_vars ()
 {
-  // for (auto it = Motors.begin(); it != Motors.end(); ++it)
-  // {
-  //   // it->update_vars();
-  //   it -> tf_1(it->);
-  // }
   for (int i = 0; i < Motors.size(); i++)
   {
     (*Motors[i]).tf_1(*Motors[i]);
   }
 }
 // update power vel
-// void motors_update_power_vel ()
-// {
-//   for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
-//   {
-//     it->update_power_vel();
-//   }
-// }
+void motors_update_power_vel ()
+{
+  for (int i = 0; i < Motors.size(); i++)
+  {
+    (*Motors[i]).update_power_vel();
+  }
+}
 // // update power vol
-// void motors_update_power_vol ()
-// {
-//   for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
-//   {
-//     it->update_power_vol();
-//   }
-// }
+void motors_update_power_vol ()
+{
+  for (int i = 0; i < Motors.size(); i++)
+  {
+    (*Motors[i]).update_power_vol();
+  }
+}
 // // update power
-// void motors_update_power ()
-// {
-//   for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
-//   {
-//     it->update_power();
-//   }
-// }
+void motors_update_power ()
+{
+  for (int i = 0; i < Motors.size(); i++)
+  {
+    (*Motors[i]).update_power();
+  }
+}
 // // update rotation vars
-// void motors_update_rotation_vars ()
-// {
-//   for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
-//   {
-//     it->update_rotation_vars();
-//   }
-// }
+void motors_update_rotation_vars ()
+{
+  for (int i = 0; i < Motors.size(); i++)
+  {
+    (*Motors[i]).update_rotation_vars();
+  }
+}
 // // update brake types
-// void motors_update_brake_type ()
-// {
-//   for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
-//   {
-//     it->update_brake_type();
-//   }
-// }
+void motors_update_brake_type ()
+{
+  for (int i = 0; i < Motors.size(); i++)
+  {
+    (*Motors[i]).update_brake_type();
+  }
+}
 
 // // reset rotation =================================================================================
 // void left_rotation_reset ()
@@ -97,10 +92,10 @@ void motors_update_vars ()
 //   left_rotation_reset();
 //   right_rotation_reset();
 // }
-// void motors_rotation_reset ()
-// {
-//   for (std::list<Motor_v2>::iterator it=Motors.begin(); it != Motors.end(); ++it)
-//   {
-//     it->rotation_reset();
-//   }
-// }
+void motors_rotation_reset ()
+{
+  for (int i = 0; i < Motors.size(); i++)
+  {
+    (*Motors[i]).rotation_reset();
+  }
+}
